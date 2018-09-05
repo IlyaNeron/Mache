@@ -1,0 +1,40 @@
+.description-section {
+  background: #f4f4f4;
+  padding: 150px 0 90px;
+}
+
+.description-block {
+  width: 40%;
+  display: inline-block;
+
+  h2 {
+
+    &:after {
+      left: 0;
+      transform: translateX(0);
+    }
+
+  }
+
+  a {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-right: 40px;
+
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 28px;
+      right: 0;
+    }
+
+  }
+
+}
+
+.image-block {
+  width: 50%;
+  display: inline-block;
+}

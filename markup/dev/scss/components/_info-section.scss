@@ -1,0 +1,52 @@
+.info-section {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 97%;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: $pink;
+    z-index: -1;
+    transform: rotate(-1deg);
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 1px;
+    min-height: 800px;
+    margin: 0 0 0 -5px;
+  }
+
+}
+
+.info-block {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  max-width: 980px;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  color: $white;
+  font-size: 22px;
+
+  h1 {
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  button {
+    margin-top: 40px;
+  }
+
+}

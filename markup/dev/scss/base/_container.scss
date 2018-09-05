@@ -1,0 +1,30 @@
+.container {
+  max-width: $base-max-width;
+  margin: 0 auto;
+  padding: $base-padding;
+  @extend %clearfix;
+}
+
+@include media('<tablet') {
+
+  .container {
+    max-width: 1024px;
+  }
+  
+}
+
+@include media('<phone') {
+
+  .container {
+    max-width: 768px;
+  }
+
+}
+
+@include media('<xs-phone') {
+
+  .container {
+    max-width: 480px;
+  }
+
+}

@@ -2,12 +2,15 @@
 @import 'vendors/include-media';
 @import 'vendors/icomoon';
 
+@import 'base/mixins';
 @import 'base/variables';
 @import 'base/reset';
 @import 'base/buttons';
-@import 'base/mixins';
 @import 'base/helpers';
 @import 'base/forms';
+@import 'base/typography';
+@import 'base/helpers';
+@import 'base/container';
 
 @import 'layouts/wrapper';
 @import 'layouts/header';
@@ -15,9 +18,8 @@
 @import 'layouts/footer';
 
 
-
-
-
-body {
-  background: skyblue;
-}
+@import 'components/logo';
+@import 'components/nav-menu';
+@import 'components/info-section';
+@import 'components/description-section';
+@import 'components/serv-section';
