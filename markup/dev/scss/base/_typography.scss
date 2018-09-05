@@ -1,0 +1,127 @@
+.caption-element {
+  color: $orange;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 30px;
+  color: $black;
+  text-transform: $h-transform;
+
+  @include media("<phone") {
+    font-weight: 600;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  font-weight: 900;
+
+  @include media("<tablet") {
+    font-size: 40px;
+  }
+
+  @include media("<phone") {
+    font-size: 30px;
+  }
+
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+  color: $white;
+
+  @include media("<tablet") {
+    font-size: 30px;
+  }
+
+  @include media("<phone") {
+    font-size: 25px;
+  }
+
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+
+  @include media("<tablet") {
+    font-size: 14px;
+  } 
+
+  @include media("<phone") {
+    font-size: 14px;
+  }
+
+}
+
+a {
+  text-decoration: none;
+  color: $base-link-color;
+  outline: none;
+  @include animate(color, .3s, ease-in-out);
+
+  &:hover,
+  &:focus {
+    color: $base-link-hover-color;
+  }
+  
+}
+
+p {
+  margin: $base-text-margin;
+}
+
+
+p, .p {
+
+  @include media("<tablet") {
+    font-size: 15px;
+  }
+
+  @include media("<phone") {
+    font-size: 14px;
+  }
+  
+}
+
+blockquote {
+  margin: 0 100px;
+  color: $white;
+  font-size: 25px;
+  font-style: italic;
+
+  cite {
+    padding-top: 40px;
+  }
+
+}
+
+@include media("<phone") {
+
+  blockquote {
+
+    q {
+      font-size: 16px;
+    }
+
+    cite {
+      font-size: 18px;
+    }
+
+  }
+
+}

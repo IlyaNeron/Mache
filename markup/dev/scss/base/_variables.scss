@@ -1,0 +1,91 @@
+
+$breakpoints: (
+  "xs-phone": 480px,
+  "phone": 768px,
+  "tablet": 1024px,
+  "desktop": 1200px,
+  "widescreen": 1800px
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+);
+
+// ligatured operators ≥ ≤
+
+// Colors
+$white: #fff !default;
+$black: #333 !default;
+$orange: #f7600e !default;
+
+// Fonts
+$base-font-sans-serif: "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+
+// Body
+$base-background-color: $white !default;
+$font-size-base: 16px !default;
+$font-weight-base: 400 !default;
+$base-line-height: 1.8 !default;
+$base-min-width: 320px !default;
+$base-color: #3b434c !default;
+
+// Container
+$base-max-width: 1075px !default;
+$base-padding: 0 15px !default;
+$sm-max-width: 860px !default;
+$sm-padding: 0 15px !default;
+
+// Links
+$base-link-color: $white !default;
+$base-link-hover-color: $orange !default;
+$base-link-transition: color 0.3s linear !default;
+
+// Buttons
+$btn-color: $white !default;
+$btn-border-radius: 10px !default;
+$btn-padding: 10px 70px !default;
+$btn-font-size: 16px !default;
+$btn-font-weight: 400 !default;
+$btn-line-height: 1 !default;
+
+// Forms
+$form-input-padding: 10px 20px 10px 20px !default;
+$form-input-font-size: 16px !default;
+$form-input-line-height: 1 !default;
+$form-input-font-weight: 300 !default;
+$form-input-border-radius: 10px !default;
+$form-input-width: 100% !default;
+$placeholder-color: $black !default;
+$forms-base-transition: box-shadow 0.3s linear !default;
+
+// Headers
+$h1-font-size: 70px !default;
+$h2-font-size: 35px !default;
+$h3-font-size: 16px !default;
+$headings-font-family: $base-font-sans-serif !default;
+$headings-color: $black !default;
+$h-transform: uppercase !default;
+$h3-weight: 600 !default;
+$h2-weight: 600 !default;
+$h3-hover-color: $orange !default;
+$h-margin-def: 0 0 30px 0 !default;
+
+// span
+$base-span-color: $orange !default;
+
+// p
+$base-text-color: $black !default;
+$base-text-font-size: 16px !default;
+$base-text-margin: 0 0 15px !default;
+
+// ul
+$base-lists-padding: 0px !default;
+$base-lists-margin: 0 !default;
+$base-lists-style: none !default;
