@@ -18,3 +18,18 @@
   }
 
 }
+
+.show-button {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  text-align: center;
+
+  i {
+    display: block;
+  }
+
+}

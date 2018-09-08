@@ -1,0 +1,105 @@
+.updates-section {
+  padding: 145px 0 150px;
+  position: relative;
+}
+
+.updates-info {
+  @include inline-space-reset;
+  @extend %listreset;
+  margin: 0 -15px;
+
+  li {
+    @include inline-space;
+    display: inline-block;
+    width: (100%/3);
+    padding: 0 15px 60px 15px;
+
+    .item-image {
+      display: block;
+      position: relative;
+      @include animate(background opacity visibility color before);
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 97%;
+        left: 0;
+        z-index: 1;
+        right: 0;
+        background: $pink;
+        height: 21px;
+        transform: rotate(2deg);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $pink;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .icon-search {
+        position: absolute;
+        @include vertical-align-el;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        color: $white;
+        font-size: 48px;
+      }
+
+      &:hover .icon-search {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:hover:before {
+        opacity: 0.9;
+        visibility: visible;
+      }
+
+    }
+
+    .updates-description {
+      padding: 25px 20px;
+      background: #f4f4f4;
+      position: relative;
+      z-index: 2;
+
+      h3 {
+        text-transform: uppercase;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .updates-info li {
+    width: 50%;
+  }
+
+}
+
+@include media('<phone') {
+
+  .updates-info li {
+    width: 100%;
+  }
+
+}

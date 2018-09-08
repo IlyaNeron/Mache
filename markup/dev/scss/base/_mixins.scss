@@ -8,6 +8,18 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin inline-space-reset {
+  line-height: 0;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+@mixin inline-space {
+  line-height: 2;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
 /// Mixin helping defining both `width` and `height` simultaneously.
 ///
 /// @author Hugo Giraudel

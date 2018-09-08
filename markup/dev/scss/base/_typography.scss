@@ -41,13 +41,14 @@ h3, .h3 {
 }
 
 .section-caption {
-  margin: 0 0 80px;
+  margin: 0 0 40px;
+  padding: 0 0 40px;
   position: relative;
 
   &:after {
     content: '';
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     width: 200px;
     height: 2px;
     background: $pink;
@@ -73,6 +74,11 @@ a {
 
 p {
   margin: 0 0 30px;
+
+  &:last-child {
+    margin: 0;
+  }
+  
 }
 
 blockquote {
