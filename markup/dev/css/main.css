@@ -692,7 +692,7 @@ blockquote {
   margin: 0 auto;
   color: #fff;
   font-size: 22px;
-  padding: 100px 0; }
+  padding: 100px 15px; }
   .info-block h1 {
     position: relative;
     text-transform: uppercase; }
@@ -1041,6 +1041,8 @@ blockquote {
         -webkit-transform: rotate(2deg);
             -ms-transform: rotate(2deg);
                 transform: rotate(2deg); }
+      .updates-info li .item-image:hover:after {
+        content: none; }
       .updates-info li .item-image:before {
         content: '';
         position: absolute;
@@ -1095,7 +1097,7 @@ blockquote {
 
 .description-section_2 {
   background: #f4f4f4;
-  padding: 150px 0 90px; }
+  padding: 80px 0 80px; }
   .description-section_2 .image-block {
     width: 55%;
     display: inline-block;

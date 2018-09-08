@@ -37,6 +37,10 @@
         transform: rotate(2deg);
       }
 
+      &:hover:after {
+        content: none;
+      }
+
       &:before {
         content: '';
         position: absolute;
