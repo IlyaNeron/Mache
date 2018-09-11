@@ -542,7 +542,8 @@ blockquote {
   .logo a {
     display: block; }
     .logo a img {
-      display: block; }
+      display: inline-block;
+      vertical-align: middle; }
 
 .navigation {
   float: right; }
