@@ -1326,4 +1326,5 @@ blockquote {
     padding: 0 0 30px; }
   .description-section-2 .description-block {
     padding: 0;
-    width: 100%; } }
+    width: 100%;
+    margin: 0; } }
