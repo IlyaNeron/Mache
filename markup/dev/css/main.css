@@ -479,7 +479,7 @@ h3, .h3 {
 
 @media (max-width: 767px) {
   .section-caption {
-    font-size: 30px; } }
+    font-size: 26px; } }
 
 a {
   text-decoration: none;
@@ -564,7 +564,8 @@ blockquote {
   background: #2b2b2b;
   padding: 45px 0;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1.2; }
   .footer .copyright {
     float: left; }
   .footer .design {
@@ -813,7 +814,7 @@ blockquote {
   .description-section .description-block {
     width: 45%;
     display: inline-block;
-    padding-right: 30px; }
+    margin-right: 30px; }
     .description-section .description-block h2:after {
       left: 0;
       -webkit-transform: translateX(0);
@@ -823,18 +824,24 @@ blockquote {
 @media (max-width: 1023px) {
   .description-section {
     padding: 80px 0 60px; }
-    .description-section .description-block {
-      width: 100%;
-      padding: 0 0 30px; }
-    .description-section .image-block {
-      position: inherit;
-      width: 100%; }
-      .description-section .image-block .image-box {
-        margin: 0; } }
+    .description-section .description-wrapper {
+      display: table; }
+      .description-section .description-wrapper .description-block {
+        width: 100%;
+        padding: 0 0 30px;
+        display: table-footer-group;
+        margin: 0; }
+      .description-section .description-wrapper .image-block {
+        position: inherit;
+        width: 100%;
+        display: table-header-group; }
+        .description-section .description-wrapper .image-block .image-box {
+          margin: 0; } }
 
 @media (max-width: 767px) {
   .description-section .description-block {
-    font-size: 15px; } }
+    font-size: 15px;
+    margin: 0; } }
 
 .service-section {
   padding: 150px 0 60px; }
@@ -907,7 +914,7 @@ blockquote {
 
 @media (max-width: 767px) {
   .list-items h3 {
-    font-size: 18px; } }
+    font-size: 16px; } }
 
 .carousel-section {
   background-position: 50% 50%;
@@ -1075,8 +1082,7 @@ blockquote {
 @media (max-width: 767px) {
   .price-items li {
     width: 100%;
-    padding: 0 15px 30px;
-    font-size: 18px; }
+    padding: 0 15px 30px; }
   .price-item .item-name {
     width: 95%; }
   .price-item button {
@@ -1135,7 +1141,7 @@ blockquote {
     width: 100%;
     padding: 0 20px 50px 20px; }
     .info-items li .item-description h3 {
-      font-size: 18px; }
+      font-size: 16px; }
     .info-items li .item-description p {
       font-size: 15px; } }
 
@@ -1281,7 +1287,7 @@ blockquote {
   .updates-info li {
     width: 100%; }
   .info-item .updates-description h3 {
-    font-size: 18px; }
+    font-size: 16px; }
   .info-item .updates-description p {
     font-size: 15px; } }
 
@@ -1319,4 +1325,5 @@ blockquote {
     width: 100%;
     padding: 0 0 30px; }
   .description-section-2 .description-block {
-    padding: 0; } }
+    padding: 0;
+    width: 100%; } }

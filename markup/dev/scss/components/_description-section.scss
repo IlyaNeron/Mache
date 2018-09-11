@@ -24,7 +24,7 @@
   .description-block {
     width: 45%;
     display: inline-block;
-    padding-right: 30px;
+    margin-right: 30px;
   
     h2 {
   
@@ -44,17 +44,25 @@
   .description-section {
     padding: 80px 0 60px;
 
-    .description-block {
-      width: 100%;
-      padding: 0 0 30px;
-    }
+    .description-wrapper {
+      display: table;
 
-    .image-block {
-      position: inherit;
-      width: 100%;
-
-      .image-box {
+      .description-block {
+        width: 100%;
+        padding: 0 0 30px;
+        display: table-footer-group;
         margin: 0;
+      }
+
+      .image-block {
+        position: inherit;
+        width: 100%;
+        display: table-header-group;
+
+        .image-box {
+          margin: 0;
+        }
+
       }
 
     }
@@ -69,6 +77,7 @@
 
     .description-block {
       font-size: 15px;
+      margin: 0;
     }
 
   }
