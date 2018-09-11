@@ -20,37 +20,3 @@
   }
 
 }
-
-.bottom-section {
-  text-align: center;
-
-  .show-button {
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-
-    i {
-      display: block;
-    }
-
-  }
-
-}
-
-.play-link {
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  padding-right: 40px;
-
-  i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
-    right: 0;
-  }
-
-}

@@ -22,8 +22,9 @@ $media-expressions: (
 
 // Colors
 $white: #fff !default;
-$black: #5a5a5a !default;
+$gray: #5a5a5a !default;
 $pink: #ed145b !default;
+$lightgray: #f4f4f4;
 
 // Fonts
 $base-font-sans-serif: "Lato", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
@@ -34,7 +35,7 @@ $font-size-base: 15px !default;
 $font-weight-base: 300 !default;
 $base-line-height: 2 !default;
 $base-min-width: 320px !default;
-$base-color: #5a5a5a !default;
+$base-color: $gray !default;
 $base-font-family: $base-font-sans-serif;
 
 // Container
@@ -60,4 +61,7 @@ $btn-min-width: 200px;
 $h1-font-size: 46px !default;
 $h2-font-size: 38px !default;
 $h3-font-size: 15px !default;
+$h4-font-size: 22px !default;
+$h5-font-size: 18px !default;
+$h6-font-size: 14px !default;
 $headings-font-family: $base-font-sans-serif !default;

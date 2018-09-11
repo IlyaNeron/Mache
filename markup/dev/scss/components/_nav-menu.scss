@@ -125,7 +125,7 @@
       transform: translateX(-100%);
       visibility: hidden;
       opacity: 0;
-      background: $black;
+      background: $gray;
       padding: 100px 15px;
       overflow: auto;
 
@@ -152,6 +152,10 @@
         opacity: 1;
         visibility: visible;
         transform: translateX(0);
+      }
+
+      .resize-active & {
+        transition: none;
       }
 
     }

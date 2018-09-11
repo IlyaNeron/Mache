@@ -10,11 +10,12 @@
     display: inline-block;
     max-width: 965px;
     width: 100%;
+    padding-right: 15px;
 
-    .bold-element {
-      font-weight: bold;
+    b {
+      font-weight: 600;
     }
-
+    
   }
 
   button {
@@ -25,9 +26,10 @@
 }
 
 
-@media (max-width: 1195px) {
+@include media('<desktop') {
 
   .slogan-section {
+    text-align: center;
 
     .slogan-text {
       width: 100%;
@@ -39,6 +41,7 @@
       transform: translateX(-50%);
       left: 50%;
       position: relative;
+      display: block;
     }
 
   }

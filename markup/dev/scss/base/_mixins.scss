@@ -8,12 +8,19 @@
   transform: translate(-50%, -50%);
 }
 
+// inline-space-reset
+// this mixin used for a remove default indent in the inline block elements
+//
 @mixin inline-space-reset {
   line-height: 0;
   font-size: 0;
   letter-spacing: 0;
 }
 
+
+// inline-space
+// this mixin used for add default text-styles to the child-elements
+//
 @mixin inline-space {
   line-height: 2;
   font-size: 15px;

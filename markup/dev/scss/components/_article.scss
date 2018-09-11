@@ -1,0 +1,94 @@
+.article {
+
+  .item-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 97%;
+      left: 0;
+      z-index: 1;
+      right: 0;
+      background: $pink;
+      height: 21px;
+      transform: rotate(2deg);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $pink;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      @include animate(opacity visibility, .2s, linear);
+    }
+
+    .icon-search {
+      position: absolute;
+      @include vertical-align-el;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      color: $white;
+      font-size: 48px;
+      @include animate(opacity visibility, .3s, linear);
+    }
+
+    &:hover {
+
+      & .icon-search {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:before {
+        opacity: 0.9;
+        visibility: visible;
+      }
+
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+        @include animate(opacity visibility, .3s, linear);
+      }
+
+    }
+
+  }
+
+  .updates-description {
+    padding: 25px 20px;
+    background: $lightgray;
+    position: relative;
+    z-index: 2;
+
+    h3 {
+    
+      a {
+        color: $gray;
+        @include animate(color);
+
+        &:hover {
+          color: $pink;
+        }
+
+      }
+      
+    }
+
+  }
+
+}

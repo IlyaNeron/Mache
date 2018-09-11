@@ -1,5 +1,5 @@
 .description-section {
-  background: #f4f4f4;
+  background: $lightgray;
   padding: 150px 0 90px;
 
   .image-block {
@@ -46,23 +46,22 @@
 
     .description-wrapper {
       display: table;
+    }
 
-      .description-block {
-        width: 100%;
-        padding: 0 0 30px;
-        display: table-footer-group;
+    .description-block {
+      width: 100%;
+      padding: 0 0 30px;
+      display: table-footer-group;
+      margin: 0;
+    }
+
+    .image-block {
+      position: inherit;
+      width: 100%;
+      display: table-header-group;
+
+      .image-box {
         margin: 0;
-      }
-
-      .image-block {
-        position: inherit;
-        width: 100%;
-        display: table-header-group;
-
-        .image-box {
-          margin: 0;
-        }
-
       }
 
     }

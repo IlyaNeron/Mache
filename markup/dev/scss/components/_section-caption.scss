@@ -1,0 +1,34 @@
+.section-caption {
+  margin: 0 0 40px;
+  padding: 0 0 40px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 2px;
+    background: $pink;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
+
+@include media('<tablet') {
+  
+  .section-caption {
+    margin: 0 0 25px;
+    padding: 0 0 25px;
+  }
+
+}
+
+@include media('<phone') {
+  
+  .section-caption {
+    font-size: 26px;
+  }
+
+}

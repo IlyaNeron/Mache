@@ -27,9 +27,6 @@
     }
 
     .item-description {
-      position: relative;
-      width: 75%;
-      display: inline-block;
       overflow: hidden;
 
       h3 {
@@ -44,30 +41,26 @@
 
 }
 
-@media (max-width: 1070px) {
 
-  .info-items li {
-    text-align: center;
-
-    .items-image {
-      float: none;
-      margin: 0 auto 15px;
-      display: block;
-      height: 60px;
-    }
-
-    .item-description {
-      width: 100%;
-    }
-
-  }
-
-}
 
 @include media('<tablet') {
 
   .company-info {
     padding: 70px 0 60px;
+  }
+
+  .info-items {
+    margin: 0 -15px;
+
+    li {
+      padding: 0 15px 60px 15px;
+
+      .items-image {
+        margin-right: 20px;
+      }
+
+    }
+
   }
 
 }
@@ -76,7 +69,7 @@
 
   .info-items li {
     width: 100%;
-    padding: 0 20px 50px 20px;
+    padding: 0 15px 50px 15px;
 
     .item-description {
 
@@ -84,12 +77,9 @@
         font-size: 16px;
       }
 
-      p {
-        font-size: 15px;
-      }
-
     }
 
   }
 
 }
+

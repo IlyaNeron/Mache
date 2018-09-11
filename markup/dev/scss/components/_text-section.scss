@@ -1,4 +1,4 @@
-.info-section-2 {
+.text-section {
   padding: 150px 0;
 
   &:before {
@@ -22,7 +22,7 @@
 
 @include media('<tablet') {
 
-  .info-section-2 {
+  .text-section {
     padding: 90px 0;
   }
 

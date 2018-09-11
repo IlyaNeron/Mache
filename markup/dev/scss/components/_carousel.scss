@@ -1,0 +1,129 @@
+.carousel {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  max-width: 860px;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  color: $white;
+  font-size: 25px;
+  font-style: italic;
+  position: relative;
+
+  blockquote {
+    margin: 0 15px;
+    padding: 100px 15px;
+
+    q {
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65px;
+        height: 50px;
+        background: url('../img/carousel-image.png') no-repeat;
+        background-size: cover;
+      }
+    
+      &:before {
+        top: 0;
+        transform: rotate(180deg) translateX(50%);
+      }
+
+    }
+
+  }
+
+  .btn-prev, .btn-next {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    i {
+      color: rgba(255, 255, 255, 0.5);
+      @include animate(color);
+      display: block;
+  
+      &:hover {
+        color: $pink;
+      }
+  
+    }
+  
+  }
+  
+  .btn-prev {
+    left: -20%;
+  }
+  
+  .btn-next {
+    right: -20%;
+  }
+
+}
+
+@include media('<desktop') {
+
+  .carousel {
+
+    .btn-prev {
+      left: -5%;
+    }
+    
+    .btn-next {
+      right: -5%;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .carousel {
+    padding: 60px 15px;
+
+    blockquote {
+      padding: 80px 15px;
+
+      q {
+
+        &:after, &:before {
+          width: 50px;
+          height: 40px;
+          background-size: cover;
+        }
+
+      }
+
+    }
+
+    .btn-prev {
+      left: 10px;
+    }
+    
+    .btn-next {
+      right: 10px;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .carousel {
+    padding: 40px 15px;
+
+    blockquote {
+      padding: 30px 15px;
+    }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+.play-link {
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    right: 0;
+  }
+
+}

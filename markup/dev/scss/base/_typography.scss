@@ -8,7 +8,7 @@ h6, .h6,
   font-family: $headings-font-family;
   line-height: 1.5;
   margin: 0 0 30px;
-  color: $black;
+  color: $gray;
 
   &:last-child {
     margin: 0;
@@ -31,7 +31,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: $h2-font-size;
-  color: $black;
+  color: $gray;
   font-weight: 300;
   font-style: italic;
 }
@@ -40,39 +40,16 @@ h3, .h3 {
   font-size: $h3-font-size;
 }
 
-.section-caption {
-  margin: 0 0 40px;
-  padding: 0 0 40px;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    width: 200px;
-    height: 2px;
-    background: $pink;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
+h4, .h4 {
+  font-size: $h4-font-size;
 }
 
-@include media('<tablet') {
-  
-  .section-caption {
-    margin: 0 0 25px;
-    padding: 0 0 25px;
-  }
-
+h5, .h5 {
+  font-size: $h5-font-size;
 }
 
-@include media('<phone') {
-  
-  .section-caption {
-    font-size: 26px;
-  }
-
+h6, .h6 {
+  font-size: $h6-font-size;
 }
 
 a {
@@ -113,31 +90,18 @@ blockquote {
 @include media("<tablet") {
 
   blockquote {
+    line-height: 1.2;
+    margin: 0 30px;
 
     q {
       font-size: 16px;
     }
 
     cite {
-      font-size: 18px;
-    }
-
-  }
-
-}
-
-@include media("<phone") {
-
-  blockquote {
-
-    q {
       font-size: 16px;
     }
 
-    cite {
-      font-size: 18px;
-    }
-
   }
 
 }
+
