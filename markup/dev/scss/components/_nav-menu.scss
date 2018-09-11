@@ -20,10 +20,13 @@
         position: absolute;
         right: 0;
         left: 100%;
-        height: 1px;
+        height: 2px;
         background: $white;
         top: 50%;
         width: 20px;
+        visibility: visible;
+        opacity: 1;
+        @include animate(visibility opacity);
       }
 
     }
@@ -34,7 +37,7 @@
       top: 8px;
       left: 0;
       right: 0;
-      height: 1px;
+      height: 2px;
       background: $white;
       display: block;
       @include animate(transform opacity visibility);
@@ -56,7 +59,18 @@
       &:before {
         transform: rotate(45deg);
       }
+
+      & span {
+        opacity: 0;
+        visibility: hidden;
       
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+      }
+
     }
 
   }
@@ -65,13 +79,14 @@
 
     .nav-menu {
       @extend %listreset;
-      font-weight: bold;
-      font-size: 16px;
       @include inline-space-reset;
 
       li {
         display: inline-block;
         @include inline-space;
+        font-size: 16px;
+        line-height: 1.2;
+        vertical-align: top;
 
         &:not(:last-child) {
           padding-right: 15px;
@@ -79,6 +94,8 @@
 
         a {
           color: $white;
+          font-weight: bold;
+
 
           &:hover {
             color: $pink;
@@ -105,11 +122,12 @@
       left: 0;
       right: 0;
       bottom: 0;
-      transform: translateX(500%);
+      transform: translateX(-100%);
       visibility: hidden;
       opacity: 0;
       background: $black;
       padding: 100px 15px;
+      overflow: auto;
 
       .nav-menu {
         font-size: 24px;
@@ -119,16 +137,33 @@
           text-align: center;
 
           &:not(:last-child) {
-            padding:0 0 15px;
+            padding:0 0 50px;
           }
+
+          a {
+            font-size: 28px;
+          }
+
         }
 
+      }
+
+      .navigation-active  & { 
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
       }
 
     }
 
     &-opener {
       display: block;
+
+      .navigation-active  & { 
+        position: fixed;
+        right: 6%;
+      }
+
     }
 
   }

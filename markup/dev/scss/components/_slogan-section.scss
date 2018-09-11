@@ -1,0 +1,76 @@
+.slogan-section {
+  background: $pink;
+  padding: 80px 0;
+
+  .slogan-text {
+    font-size: 38px;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    max-width: 965px;
+    width: 100%;
+
+    .bold-element {
+      font-weight: bold;
+    }
+
+  }
+
+  button {
+    background: $white;
+    color: $pink;
+  }
+
+}
+
+
+@media (max-width: 1195px) {
+
+  .slogan-section {
+
+    .slogan-text {
+      width: 100%;
+      padding-bottom: 30px;
+      font-size: 32px;
+    }
+
+    button {
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .slogan-section {
+
+    .slogan-text {
+      font-size: 22px;
+    }
+
+    button {
+      width: 100%;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .slogan-section {
+    padding: 60px 0;
+
+    .slogan-text {
+      font-size: 22px;
+      text-align: center;
+    }
+
+  }
+
+}

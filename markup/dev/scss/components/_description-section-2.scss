@@ -1,4 +1,4 @@
-.description-section_2 {
+.description-section-2 {
   background: #f4f4f4;
   padding: 80px 0 80px;
 
@@ -16,7 +16,25 @@
 
   .description-block {
     float: right;
+    padding: 0 0 0 30px;
   }
 
 }
   
+
+@include media('<tablet') {
+
+  .description-section-2 {
+
+    .image-block {
+      width: 100%;
+      padding: 0 0 30px;
+    }
+
+    .description-block {
+      padding: 0;
+    }
+
+  }
+
+}

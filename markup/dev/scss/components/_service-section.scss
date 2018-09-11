@@ -1,5 +1,5 @@
-.serv-section {
-  padding: 150px 0 120px;
+.service-section {
+  padding: 150px 0 60px;
 }
 
 .head-block {
@@ -18,7 +18,8 @@
     width: (100%/4);
     text-align: center;
     @include inline-space;
-    padding: 0 30px;
+    padding: 0 30px 30px;
+    vertical-align: top;
 
     &:first-child {
       margin: 0;
@@ -41,17 +42,21 @@
 
     }
 
-    a {
-      display: block;
-      text-transform: uppercase;
-      @include animate(color);
+    h3 {
+      margin: 0 0 30px;
 
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+      a {
+        text-transform: uppercase;
+        @include animate(color);
 
-      &:hover {
-        color: $black;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+
+        &:hover {
+          color: $black;
+        }
+
       }
 
     }
@@ -61,10 +66,15 @@
 }
 
 @include media('<tablet') {
+
+  .service-section {
+    padding: 90px 0 30px;
+  }
+
   .list-items {
+    margin: 0 -15px;
 
     li {
-      width: (100%/2);
       padding: 0 15px 30px;
     }
 
@@ -73,6 +83,7 @@
 } 
 
 @include media('<phone') {
+
   .list-items {
 
     li {
@@ -82,4 +93,16 @@
 
   }
 
+}
+
+@include media('<phone') {
+
+  .list-items {
+    
+     h3 {
+       font-size: 18px;
+     }
+
+  }
+  
 }

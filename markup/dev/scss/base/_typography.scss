@@ -58,6 +58,23 @@ h3, .h3 {
   
 }
 
+@include media('<tablet') {
+  
+  .section-caption {
+    margin: 0 0 25px;
+    padding: 0 0 25px;
+  }
+
+}
+
+@include media('<phone') {
+  
+  .section-caption {
+    font-size: 30px;
+  }
+
+}
+
 a {
   text-decoration: none;
   color: $base-link-color;
@@ -89,6 +106,22 @@ blockquote {
 
   cite {
     padding-top: 40px;
+  }
+
+}
+
+@include media("<tablet") {
+
+  blockquote {
+
+    q {
+      font-size: 16px;
+    }
+
+    cite {
+      font-size: 18px;
+    }
+
   }
 
 }

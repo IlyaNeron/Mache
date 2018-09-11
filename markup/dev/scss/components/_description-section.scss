@@ -3,7 +3,7 @@
   padding: 150px 0 90px;
 
   .image-block {
-    width: 60%;
+    width: 55%;
     display: inline-block;
     position: absolute;
 
@@ -13,40 +13,62 @@
 
       img {
         width: 100%;
+        display: block;
         height: 100%;
       }
 
     }
 
   }
+
+  .description-block {
+    width: 45%;
+    display: inline-block;
+    padding-right: 30px;
+  
+    h2 {
+  
+      &:after {
+        left: 0;
+        transform: translateX(0);
+      }
+  
+    }
+  
+  }
   
 }
 
-.description-block {
-  width: 40%;
-  display: inline-block;
+@include media('<tablet') {
 
-  h2 {
+  .description-section {
+    padding: 80px 0 60px;
 
-    &:after {
-      left: 0;
-      transform: translateX(0);
+    .description-block {
+      width: 100%;
+      padding: 0 0 30px;
+    }
+
+    .image-block {
+      position: inherit;
+      width: 100%;
+
+      .image-box {
+        margin: 0;
+      }
+
     }
 
   }
 
-  a {
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    padding-right: 40px;
+}
 
-    i {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 28px;
-      right: 0;
+@include media('<phone') {
+
+  .description-section {
+
+    .description-block {
+      font-size: 15px;
     }
 
   }

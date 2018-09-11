@@ -1,0 +1,29 @@
+.info-section-2 {
+  padding: 150px 0;
+
+  &:before {
+    content: none;
+  }
+
+  .info-block {
+    padding: 0;
+
+    h2 {
+      color: $white;
+    }
+
+  }
+
+  &:after {
+    content: none;
+  }
+  
+}
+
+@include media('<tablet') {
+
+  .info-section-2 {
+    padding: 90px 0;
+  }
+
+}

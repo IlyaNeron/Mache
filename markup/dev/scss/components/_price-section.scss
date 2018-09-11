@@ -1,0 +1,146 @@
+.price-section {
+  padding: 150px 0 120px;
+  background: #f4f4f4;
+
+  .head-block {
+    margin: 0 auto 60px;
+  }
+
+}
+
+
+.price-items {
+  @extend %listreset;
+  margin: 0 -15px;
+  @include inline-space-reset;
+
+  > li {
+    width: (100%/4);
+    display: inline-block;
+    padding: 0 15px 15px;
+    @include inline-space;
+    vertical-align: top;
+  }
+
+}
+
+.price-item {
+
+  .price-block {
+    background: $black;
+    color: $white;
+    padding: 30px 0 55px;
+    text-align: center;
+    position: relative;
+
+    .price {
+      font-size: 50px;
+      font-weight: bold;
+      display: block;
+      line-height: 1;
+
+      i {
+        font-size: 20px;
+        font-style: normal;
+      }
+
+      sub {
+        bottom: 0;
+      }
+
+    }
+
+    .item-name {
+      display: block;
+      margin-bottom: -10%;
+      position: absolute;
+      top: 86%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #f4f4f4;
+      color: $black;
+      border-radius: 24px;
+      padding: 15px 15px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1;
+      min-width: 200px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .active-block {
+    background: $pink;
+  }
+
+  .description-block {
+    text-align: center;
+    background: #fff;
+    padding: 60px 30px 30px;
+
+    ul {
+      @extend %listreset;
+      padding-bottom: 40px;
+
+      li {
+        width: 100%;
+        
+        &:not(:last-child) {
+          padding: 0 0 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+  button {
+    margin: 0 -30px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .price-section {
+    padding: 90px 0 60px;
+  }
+
+  .price-items {
+
+    li {
+      width: (100%/2);
+      padding: 0 15px 30px;
+    }
+
+  }
+
+} 
+
+@include media('<phone') {
+
+  .price-items {
+
+    li {
+      width: 100%;
+      padding: 0 15px 30px;
+      font-size: 18px;
+    }
+
+  }
+
+  .price-item {
+
+    .item-name {
+      width: 95%;
+    }
+
+    button {
+      width: 105%;
+    }
+
+  }
+
+} 

@@ -12,12 +12,12 @@
     width: (100%/3);
     display: inline-block;
     padding: 0 20px 80px 20px;
+    vertical-align: top;
 
     .items-image {
-      display: inline-block;
       width: 50px;
-      height: 100%;
       float: left;
+      margin-right: 30px;
 
       img {
         max-width: 57px; 
@@ -28,10 +28,9 @@
 
     .item-description {
       position: relative;
-      width: 80%;
+      width: 75%;
       display: inline-block;
-      float: right;
-      padding-left: 20px;
+      overflow: hidden;
 
       h3 {
         text-transform: uppercase;
@@ -45,19 +44,50 @@
 
 }
 
-@include media('<tablet') {
+@media (max-width: 1070px) {
+
   .info-items li {
-    width: 50%;
+    text-align: center;
+
+    .items-image {
+      float: none;
+      margin: 0 auto 15px;
+      display: block;
+      height: 60px;
+    }
+
+    .item-description {
+      width: 100%;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .company-info {
+    padding: 90px 0 60px;
   }
 
 }
 
 @include media('<phone') {
+
   .info-items li {
     width: 100%;
+    padding: 0 20px 50px 20px;
 
     .item-description {
-      width: 85%;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
     }
 
   }
