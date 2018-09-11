@@ -87,7 +87,7 @@
   .list-items {
 
     li {
-      width: 100%;
+      width: 50%;
       padding: 0 15px 30px;
     }
 
@@ -95,13 +95,17 @@
 
 }
 
-@include media('<phone') {
+@include media('<xs-phone') {
 
   .list-items {
+
+    li {
+      width: 100%;
+    }
     
-     h3 {
-       font-size: 16px;
-     }
+    h3 {
+      font-size: 16px;
+    }
 
   }
   

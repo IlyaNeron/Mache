@@ -857,10 +857,12 @@ blockquote {
 
 @media (max-width: 767px) {
   .list-items li {
-    width: 100%;
+    width: 50%;
     padding: 0 15px 30px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
+  .list-items li {
+    width: 100%; }
   .list-items h3 {
     font-size: 16px; } }
 
