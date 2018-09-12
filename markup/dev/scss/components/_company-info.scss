@@ -7,7 +7,7 @@
   margin: 0 -20px;
   @include inline-space-reset;
 
-  li {
+  > li {
     @include inline-space;
     width: (100%/3);
     display: inline-block;
@@ -47,16 +47,17 @@
 
   .company-info {
     padding: 70px 0 60px;
-  }
 
-  .info-items {
-    margin: 0 -15px;
+    .info-items {
+      margin: 0 -15px;
 
-    li {
-      padding: 0 15px 60px 15px;
+      li {
+        padding: 0 15px 60px 15px;
 
-      .items-image {
-        margin-right: 20px;
+        .items-image {
+          margin-right: 20px;
+        }
+
       }
 
     }
@@ -67,14 +68,18 @@
 
 @include media('<phone') {
 
-  .info-items li {
-    width: 100%;
-    padding: 0 15px 50px 15px;
+  .company-info {
 
-    .item-description {
+    .info-items li {
+      width: 100%;
+      padding: 0 15px 50px 15px;
 
-      h3 {
-        font-size: 16px;
+      .item-description {
+
+        h3 {
+          font-size: 16px;
+        }
+
       }
 
     }

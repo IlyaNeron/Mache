@@ -1,82 +1,95 @@
-.carousel {
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  max-width: 860px;
-  z-index: 1;
-  text-align: center;
-  margin: 0 auto;
-  color: $white;
-  font-size: 25px;
-  font-style: italic;
+.cycle-gallery {
   position: relative;
 
-  blockquote {
-    margin: 0 15px;
-    padding: 100px 15px;
+  .mask {
+    overflow: hidden;
+    width: 100%;
 
-    q {
+    .slideset {
+      width: 99999px;
+      float: left;
+    }
 
-      &:after, &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 65px;
-        height: 50px;
-        background: url('../img/carousel-image.png') no-repeat;
-        background-size: cover;
-      }
-    
-      &:before {
-        top: 0;
-        transform: rotate(180deg) translateX(50%);
+  }
+
+  .slide {
+    width: 100%;
+    float: left;
+
+    .active {
+      height: 300px;
+    }
+
+    blockquote {
+      margin: 0 auto;
+      padding: 100px 30px;
+      max-width: 860px;
+
+      q {
+
+        &:after,
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 65px;
+          height: 50px;
+          background: url('../img/carousel-image.png') no-repeat;
+          background-size: cover;
+        }
+
+        &:before {
+          top: 0;
+          transform: rotate(180deg) translateX(50%);
+        }
+
       }
 
     }
 
   }
 
-  .btn-prev, .btn-next {
-
+  .btn-prev,
+  .btn-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  
-    i {
-      color: rgba(255, 255, 255, 0.5);
-      @include animate(color);
-      display: block;
-  
-      &:hover {
-        color: $pink;
-      }
-  
+    color: rgba(255, 255, 255, 0.5);
+    @include animate(color);
+    font-size: 28px;
+
+    &:hover {
+      color: $pink;
     }
-  
+
+    i {
+      display: block;
+    }
+
   }
-  
+
   .btn-prev {
-    left: -20%;
+    left: 15%;
   }
-  
+
   .btn-next {
-    right: -20%;
+    right: 15%;
   }
 
 }
 
 @include media('<desktop') {
 
-  .carousel {
+  .cycle-gallery {
 
     .btn-prev {
-      left: -5%;
+      left: 10px;
     }
-    
+
     .btn-next {
-      right: -5%;
+      right: 10px;
     }
 
   }
@@ -85,15 +98,16 @@
 
 @include media('<tablet') {
 
-  .carousel {
-    padding: 60px 15px;
+  .cycle-gallery {
+    padding: 40px 30px;
 
     blockquote {
-      padding: 80px 15px;
+      padding: 30px 15px;
 
       q {
 
-        &:after, &:before {
+        &:after,
+        &:before {
           width: 50px;
           height: 40px;
           background-size: cover;
@@ -106,22 +120,9 @@
     .btn-prev {
       left: 10px;
     }
-    
+
     .btn-next {
       right: 10px;
-    }
-
-  }
-
-}
-
-@include media('<tablet') {
-
-  .carousel {
-    padding: 40px 15px;
-
-    blockquote {
-      padding: 30px 15px;
     }
 
   }

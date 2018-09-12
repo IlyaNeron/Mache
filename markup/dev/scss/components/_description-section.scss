@@ -1,12 +1,11 @@
 .description-section {
-  background: $lightgray;
+  background: $light-gray;
   padding: 150px 0 90px;
 
   .image-block {
     width: 55%;
     display: inline-block;
     position: absolute;
-
 
     .image-box {
       margin: 0 10% -20% -5%;
@@ -25,18 +24,18 @@
     width: 45%;
     display: inline-block;
     margin-right: 30px;
-  
+
     h2 {
-  
+
       &:after {
         left: 0;
         transform: translateX(0);
       }
-  
+
     }
-  
+
   }
-  
+
 }
 
 @include media('<tablet') {

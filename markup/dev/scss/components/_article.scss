@@ -71,12 +71,12 @@
 
   .updates-description {
     padding: 25px 20px;
-    background: $lightgray;
+    background: $light-gray;
     position: relative;
     z-index: 2;
 
     h3 {
-    
+
       a {
         color: $gray;
         @include animate(color);
@@ -86,7 +86,7 @@
         }
 
       }
-      
+
     }
 
   }
