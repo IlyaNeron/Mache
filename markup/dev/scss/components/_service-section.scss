@@ -1,5 +1,5 @@
 .service-section {
-  padding: 150px 0 60px;
+  padding: 140px 0 60px;
 }
 
 .list-items {
@@ -80,11 +80,16 @@
 
 @include media('<phone') {
 
+  .service-section {
+    padding: 40px 0 30px;
+  }
+
   .list-items {
+    margin: 0;
 
     li {
       width: 50%;
-      padding: 0 15px 30px;
+      padding: 0 0 30px;
     }
 
   }

@@ -6,3 +6,11 @@
   z-index: 2;
   padding: 40px 0;
 }
+
+@include media('<phone') {
+
+  .header {
+    padding: 30px 0;
+  }
+
+}

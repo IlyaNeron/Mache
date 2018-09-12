@@ -60,7 +60,7 @@
         transform: rotate(45deg);
       }
 
-      & span {
+      span {
         opacity: 0;
         visibility: hidden;
 
@@ -89,7 +89,15 @@
         vertical-align: top;
 
         &:not(:last-child) {
-          padding-right: 15px;
+          padding-right: 20px;
+        }
+
+        &.active-link {
+
+          a {
+            color: $pink !important;
+          }
+
         }
 
         a {

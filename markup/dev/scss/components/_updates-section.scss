@@ -22,7 +22,7 @@
     @include inline-space;
     display: inline-block;
     width: (100%/3);
-    padding: 0 15px 60px 15px;
+    padding: 0 0 60px;
     vertical-align: top;
   }
 
@@ -36,15 +36,25 @@
 
   .updates-info li {
     width: 50%;
-    padding: 0 15px 40px 15px;
+    padding: 0 15px 40px;
   }
 
 }
 
 @include media('<phone') {
 
-  .updates-info li {
-    width: 100%;
+  .updates-section {
+    padding: 40px 0 30px;
+  }
+
+  .updates-info {
+    padding: 0 0 30px;
+    
+    li {
+      width: 100%;
+      padding: 0 15px 20px;
+    }
+
   }
 
 }

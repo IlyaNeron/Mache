@@ -3,3 +3,19 @@
   max-width: 700px;
   margin: 0 auto 90px;
 }
+
+@include media('<tablet') {
+
+  .head-block {
+    margin: 0 auto 60px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .head-block {
+    margin: 0 auto 40px;
+  }
+
+}

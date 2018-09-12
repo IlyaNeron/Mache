@@ -39,3 +39,11 @@
   }
 
 }
+
+@include media('<phone') {
+
+  .content-section {
+    padding: 40px 0;
+  }
+
+}
