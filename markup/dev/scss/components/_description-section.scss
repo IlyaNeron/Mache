@@ -1,6 +1,6 @@
 .description-section {
   background: $light-gray;
-  padding: 135px 0 110px;
+  padding: 150px 0 80px;
   position: relative;
   z-index: -2;
 
@@ -22,7 +22,7 @@
     position: absolute;
 
     .image-box {
-      margin: 0 10% -20% -5%;
+      margin: -3% 10% -20% -5%;
 
       img {
         width: 100%;
@@ -46,6 +46,10 @@
         transform: translateX(0);
       }
 
+    }
+
+    p {
+      margin: 0 0 50px;
     }
 
   }

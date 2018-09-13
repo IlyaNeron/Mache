@@ -511,7 +511,7 @@ blockquote {
 
 .footer {
   background: #2b2b2b;
-  padding: 45px 0;
+  padding: 65px 0;
   color: #fff;
   text-transform: uppercase;
   line-height: 1.2; }
@@ -734,7 +734,7 @@ blockquote {
 
 .description-section {
   background: #f4f4f4;
-  padding: 135px 0 110px;
+  padding: 150px 0 80px;
   position: relative;
   z-index: -2; }
   .description-section:after {
@@ -754,7 +754,7 @@ blockquote {
     display: inline-block;
     position: absolute; }
     .description-section .image-block .image-box {
-      margin: 0 10% -20% -5%; }
+      margin: -3% 10% -20% -5%; }
       .description-section .image-block .image-box img {
         width: 100%;
         display: block;
@@ -768,6 +768,8 @@ blockquote {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0); }
+    .description-section .description-block p {
+      margin: 0 0 50px; }
 
 @media (max-width: 1023px) {
   .description-section {
@@ -801,7 +803,7 @@ blockquote {
         margin: 0 0 20px; } }
 
 .service-section {
-  padding: 140px 0 60px; }
+  padding: 150px 0 90px; }
 
 .list-items {
   line-height: 0;
@@ -880,7 +882,7 @@ blockquote {
           background-size: cover;
   position: relative;
   text-align: center;
-  padding: 75px 0; }
+  padding: 100px 0; }
 
 @media (max-width: 1023px) {
   .carousel-section {
@@ -891,7 +893,7 @@ blockquote {
     padding: 30px 0; } }
 
 .price-section {
-  padding: 135px 0 90px;
+  padding: 150px 0 120px;
   background: #f4f4f4; }
   .price-section .head-block {
     margin: 0 auto 60px; }
@@ -983,7 +985,7 @@ blockquote {
     padding-bottom: 15px; } }
 
 .company-info {
-  padding: 140px 0 15px; }
+  padding: 145px 0 55px; }
 
 .info-items {
   margin: 0 -20px;
@@ -1035,7 +1037,7 @@ blockquote {
 
 .slogan-section {
   background: #ed145b;
-  padding: 75px 0; }
+  padding: 80px 0; }
   .slogan-section .slogan-text {
     font-size: 38px;
     color: #fff;
@@ -1081,7 +1083,7 @@ blockquote {
       width: 100%; } }
 
 .updates-section {
-  padding: 145px 0 50px;
+  padding: 145px 0 60px;
   position: relative; }
   .updates-section .bottom-section {
     text-align: center; }
@@ -1091,7 +1093,7 @@ blockquote {
   font-size: 0;
   letter-spacing: 0;
   margin: 0 -15px;
-  padding: 0 0 50px; }
+  padding: 0 0 55px; }
   .updates-info h3 {
     text-transform: uppercase; }
   .updates-info li {
@@ -1100,7 +1102,7 @@ blockquote {
     letter-spacing: normal;
     display: inline-block;
     width: 33.33333%;
-    padding: 0 0 60px;
+    padding: 0 15px 60px;
     vertical-align: top; }
 
 @media (max-width: 1023px) {
@@ -1120,7 +1122,7 @@ blockquote {
       padding: 0 15px 20px; } }
 
 .text-section {
-  padding: 140px 0; }
+  padding: 145px 0; }
   .text-section:before {
     content: none; }
   .text-section .info-block {
@@ -1141,26 +1143,50 @@ blockquote {
     padding: 40px 0; } }
 
 .content-section {
-  padding: 80px 0 80px; }
+  padding: 145px 0 145px; }
+  .content-section:after {
+    content: none; }
   .content-section .image-block {
     width: 55%;
     display: inline-block;
-    position: relative; }
-    .content-section .image-block img {
-      width: 100%;
-      height: 100%; }
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .content-section .image-block .image-box {
+      margin: 0 10%;
+      -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.16); }
+      .content-section .image-block .image-box img {
+        width: 100%;
+        height: 100%;
+        display: block; }
   .content-section .description-block {
     float: right;
     padding: 0 0 0 30px;
     margin: 0; }
 
+@media (max-width: 1199px) {
+  .content-section .image-block .image-box {
+    margin: 0 5%; } }
+
 @media (max-width: 1023px) {
-  .content-section .image-block {
-    width: 100%;
-    padding: 0 0 30px; }
-  .content-section .description-block {
-    padding: 0;
-    width: 100%; } }
+  .content-section {
+    padding: 80px 0 60px; }
+    .content-section .image-block {
+      width: 100%;
+      padding: 0 0 30px;
+      left: auto;
+      top: auto;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+      .content-section .image-block .image-box {
+        margin: 0; }
+    .content-section .description-block {
+      padding: 0;
+      width: 100%; } }
 
 @media (max-width: 767px) {
   .content-section {
@@ -1191,8 +1217,9 @@ blockquote {
 
 .section-caption {
   margin: 0 0 40px;
-  padding: 0 0 40px;
-  position: relative; }
+  padding: 0 0 45px;
+  position: relative;
+  line-height: 1.4; }
   .section-caption:after {
     content: '';
     position: absolute;
